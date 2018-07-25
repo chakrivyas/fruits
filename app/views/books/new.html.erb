@@ -1,0 +1,33 @@
+<%#= form_with (model: book  , local: true)   do |f| %>
+
+<h1> Enter book details here </h1>
+
+<%= form_for(@book) do |f| %>
+<div class="container">
+
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+</div>
+
+
+
+<div class="container">
+
+<%= f.label :price %>
+<%= f.text_field :price %>
+
+</div>
+
+<div class="container">
+
+<%= f.label :size %>
+<%= f.text_field :size %>
+
+</div>
+
+
+<%= f.submit("submit") %>
+
+<% end %> 
+

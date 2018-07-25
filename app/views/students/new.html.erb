@@ -1,0 +1,47 @@
+<h1> this is New </h1>
+
+<%= form_with(model: @student , local: true) do |f| %>
+
+ 
+<div class="container">
+
+ <div class="field">
+
+ <%= f.label :name %>
+ <%= f.text_field :name %>
+
+ </div>
+
+
+
+<div class="field">
+
+<%= f.label :mobilenumber %>
+<%= f.text_field :mobilenumber %>
+
+</div>
+
+
+<div class="field">
+
+<%= f.label :country %>
+<%= f.text_field :country %>
+
+</div>
+
+<div class="field">
+
+<%= f.label :gmail %>
+<%= f.text_field :gmail %>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<% end %>  

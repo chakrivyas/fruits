@@ -1,0 +1,42 @@
+<%= form_with(model: bottle , local:true) do |form| %>
+
+<div class="container">
+
+<div class="field">
+
+<%= form.label :bottlename %>
+<%= form.text_field :bottlename %>
+
+</div>
+
+
+<div class="field">
+
+<%= form.label :bottleprice %>
+<%= form.text_field :bottleprice %>
+
+</div>
+
+
+<div class="field">
+
+<%= form.label :bottlecolour %>
+<%= form.text_field :bottlecolour %>
+</div>
+
+<div class="field">
+
+<%= form.label :bottlecountry %>
+<%= form.text_field :bottlecountry %>
+
+</div>
+
+
+<%= form.submit("submit") %>
+
+</div>
+
+
+
+
+<% end %>
