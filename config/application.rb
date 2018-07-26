@@ -22,6 +22,8 @@ module Fruits
 
     config.eager_load_paths << "#{Rails.root}/lib"   
 
+  config.autoload_paths << Rails.root.join("lib")
+
     #config.action_controller.permit_all_parameters = true
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+resources :pages
   get 'pages/home'
 
   get 'pages/about'
@@ -7,7 +8,7 @@ Rails.application.routes.draw do
   get 'pages/contact'
 
 
- get  'tech-news' ,     to: 'pages#tech_news'
+ get  'tech-news' ,     to: 'home#tech_news'
 
 #root to: 'developers#index'
 

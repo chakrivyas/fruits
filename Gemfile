@@ -6,6 +6,10 @@ git_source(:github) do |repo_name|
 end
 
 
+
+
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
 # Use Puma as the app server
@@ -28,6 +32,12 @@ gem 'devise'
 
 gem 'bootstrap', '~> 4.1.1'
 
+
+# sending sms and otp  using twilio gem 
+
+gem 'twilio-ruby', '~> 5.11', '>= 5.11.1'
+
+gem 'dotenv-rails', :groups => [:development, :test]
 # adding twitter gem
 
 gem 'twitter', '~> 6.2'
@@ -62,5 +72,18 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+    ruby "2.4.1"
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
+
+
+
+
+
+
+
+
+

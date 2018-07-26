@@ -11,7 +11,17 @@ class HomeController < ApplicationController
 
        redirect_to new_user_session_path
 
+       
+
     end
+
+
+    def tech_news
+
+     @tweets = SocialTool.twitter_search
+
+
+    end 
 
 
 
